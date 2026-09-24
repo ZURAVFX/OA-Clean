@@ -10,7 +10,3 @@ The website is published from `docs/` through GitHub Pages. Application source i
 - macOS DMG for Apple silicon
 - macOS DMG for Intel
 - One-page macOS installation guide
-
-## Brand system
-
-The page follows the One Agency 2026 identity: DM Sans, Pure Black, Off White, Energetic Green, restrained technical grids and 10px image-frame corners.

@@ -57,103 +57,15 @@ h1, h2, h3, p { margin-top: 0; }
 }
 .brand img, footer img { display: block; filter: invert(1); }
 .brand img { width: 118px; }
-.header-link {
-  padding: 11px 19px;
-  border-radius: 10px;
-  background: var(--green);
-  color: var(--black);
-  text-decoration: none;
-}
-
-.hero {
-  width: var(--page);
-  min-height: 670px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
-  border-inline: 1px solid var(--dark-line);
-}
-.hero-copy {
-  padding: 96px 7vw 82px 5vw;
-  background-image:
-    linear-gradient(var(--dark-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--dark-line) 1px, transparent 1px);
-  background-size: 72px 72px;
-}
-.eyebrow {
-  margin-bottom: 34px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  font-size: 12px;
-}
-.eyebrow span { width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
-h1 {
-  margin-bottom: 34px;
-  font-size: clamp(66px, 7.7vw, 120px);
-  font-weight: 500;
-  line-height: .89;
-  letter-spacing: -.075em;
-}
-h1 em { color: var(--green); font-style: normal; }
-.intro { max-width: 640px; margin-bottom: 36px; font-size: clamp(18px, 1.4vw, 22px); }
-.button {
-  min-width: 230px;
-  padding: 16px 18px;
-  display: inline-flex;
-  justify-content: center;
-  border-radius: 10px;
-  background: var(--green);
-  color: var(--black);
-  font-weight: 500;
-  text-decoration: none;
-}
-.button:hover, .header-link:hover { background: var(--white); }
-
-.hero-art {
-  position: relative;
-  display: grid;
-  place-items: center;
-  border-left: 1px solid var(--dark-line);
-  background: var(--green);
-  color: var(--black);
-}
-.hero-art::after { content: ""; position: absolute; inset: 24px; border: 1px solid rgba(0,0,0,.22); border-radius: 10px; }
-.hero-art > p { position: absolute; z-index: 1; top: 42px; left: 44px; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
-.official-mark {
-  position: relative;
-  z-index: 1;
-  width: min(54%, 270px);
-  aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  border-radius: 22%;
-  background: rgba(255,255,255,.13);
-  box-shadow: 0 30px 65px rgba(0,0,0,.14);
-}
-.official-mark img { width: 54%; }
-
-.benefits {
-  width: var(--page);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid var(--dark-line);
-  border-top: 0;
-}
-.benefits p { margin: 0; padding: 20px; border-right: 1px solid var(--dark-line); text-align: center; font-size: 14px; }
-.benefits p:last-child { border-right: 0; }
+.header-version { font-size: 13px; letter-spacing: .02em; }
 
 .downloads {
-  padding: 110px max(32px, calc((100vw - min(1380px, calc(100vw - 64px))) / 2));
+  padding: 64px max(32px, calc((100vw - min(1380px, calc(100vw - 64px))) / 2)) 96px;
   background: var(--white);
   color: var(--black);
 }
-.section-heading { display: grid; grid-template-columns: 1fr 3fr; align-items: start; padding-bottom: 38px; border-bottom: 1px solid var(--light-line); }
-.section-heading > p { margin: 9px 0 0; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
-.section-heading h2, .privacy h2 {
+.section-heading { padding-bottom: 34px; border-bottom: 1px solid var(--light-line); }
+.section-heading h1, .privacy h2 {
   margin-bottom: 0;
   font-size: clamp(44px, 5.6vw, 78px);
   font-weight: 400;
@@ -163,7 +75,7 @@ h1 em { color: var(--green); font-style: normal; }
 .section-intro { margin: 18px 0 0; font-size: 18px; }
 .download-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-top: 28px; }
 .download-card {
-  min-height: 330px;
+  min-height: 260px;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -171,13 +83,11 @@ h1 em { color: var(--green); font-style: normal; }
   border-radius: 10px;
   background: #f1f1f1;
 }
-.download-card:hover, .download-card.is-recommended { background: var(--green); }
 .card-label { display: flex; justify-content: space-between; text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
-.recommended { padding: 3px 8px; border-radius: 999px; background: var(--black); color: var(--white); text-transform: none; letter-spacing: 0; }
-.download-card h3 { margin: auto 0 5px; font-size: clamp(30px, 3vw, 43px); font-weight: 400; line-height: 1; letter-spacing: -.05em; }
+.download-card h2 { margin: auto 0 5px; font-size: clamp(30px, 3vw, 43px); font-weight: 400; line-height: 1; letter-spacing: -.05em; }
 .download-card p { margin-bottom: 26px; }
-.download-card a { padding: 15px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; border-block: 1px solid var(--light-line); font-weight: 500; text-decoration: none; }
-.download-card a:hover { padding-inline: 8px; }
+.download-card a { padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border-radius: 10px; background: var(--green); color: var(--black); font-weight: 500; text-decoration: none; }
+.download-card a:hover { background: var(--black); color: var(--white); }
 .download-icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .mac-check { margin: 24px 0 0; }
 
@@ -193,7 +103,7 @@ h1 em { color: var(--green); font-style: normal; }
   color: var(--white);
 }
 .support-label { margin-bottom: 14px; color: var(--green); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
-.mac-support h3 { max-width: 850px; margin-bottom: 14px; font-size: clamp(26px, 2.6vw, 38px); font-weight: 400; line-height: 1.08; letter-spacing: -.04em; }
+.mac-support h2 { max-width: 850px; margin-bottom: 14px; font-size: clamp(26px, 2.6vw, 38px); font-weight: 400; line-height: 1.08; letter-spacing: -.04em; }
 .mac-support div > p:last-child { max-width: 850px; margin-bottom: 0; font-size: 17px; }
 .guide-button { min-width: 210px; padding: 15px 18px; border-radius: 10px; background: var(--green); color: var(--black); font-weight: 500; text-align: center; text-decoration: none; }
 .guide-button:hover { background: var(--white); }
@@ -225,10 +135,8 @@ footer a { justify-self: end; }
 
 @media (max-width: 900px) {
   :root { --page: calc(100vw - 32px); }
-  .hero { grid-template-columns: 1fr; }
-  .hero-art { min-height: 400px; border-top: 1px solid var(--dark-line); border-left: 0; }
   .download-grid { grid-template-columns: 1fr; }
-  .download-card { min-height: 270px; }
+  .download-card { min-height: 240px; }
   .mac-support { grid-template-columns: 1fr; gap: 28px; }
   .guide-button { justify-self: start; }
   .privacy { grid-template-columns: 90px 1fr; }
@@ -239,16 +147,9 @@ footer a { justify-self: end; }
   :root { --page: calc(100vw - 24px); }
   .site-header { height: 76px; }
   .brand img { width: 96px; }
-  .header-link { padding: 9px 14px; }
-  .hero-copy { padding: 54px 22px 58px; }
-  h1 { font-size: clamp(54px, 18vw, 76px); }
-  .hero-art { min-height: 320px; }
-  .benefits { grid-template-columns: 1fr; }
-  .benefits p, .benefits p:last-child { border-right: 0; border-bottom: 1px solid var(--dark-line); }
-  .benefits p:last-child { border-bottom: 0; }
-  .downloads { padding: 76px 20px; }
-  .section-heading { grid-template-columns: 1fr; gap: 24px; }
-  .section-heading h2, .privacy h2 { font-size: 46px; }
+  .header-version { font-size: 12px; }
+  .downloads { padding: 44px 20px 76px; }
+  .section-heading h1, .privacy h2 { font-size: 46px; }
   .mac-support { padding: 24px; }
   .privacy { padding: 58px 20px; grid-template-columns: 1fr; }
   .privacy p { grid-column: 1; }
@@ -258,5 +159,5 @@ footer a { justify-self: end; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .download-card a, .button, .header-link, .guide-button { transition: 160ms ease; }
+  .download-card a, .guide-button { transition: 160ms ease; }
 }

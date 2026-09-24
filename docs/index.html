@@ -50,7 +50,10 @@
       <section class="downloads" id="downloads" aria-labelledby="download-heading">
         <div class="section-heading">
           <p>01 / Download</p>
-          <h2 id="download-heading">Choose your machine.</h2>
+          <div>
+            <h2 id="download-heading">Download OA Clean.</h2>
+            <p class="section-intro">Choose the installer that matches your computer.</p>
+          </div>
         </div>
 
         <div class="download-grid">
@@ -58,41 +61,43 @@
             <div class="card-label"><span>Windows</span><span class="recommended" hidden>Recommended</span></div>
             <h3>Windows 10 / 11</h3>
             <p>64-bit installer · 136 MB</p>
-            <a href="https://github.com/ZURAVFX/OA-Clean/releases/download/v1.1.0/OA-Clean-1.1.0-Windows-Setup-x64.exe">Download .exe</a>
+            <a href="https://github.com/ZURAVFX/OA-Clean/releases/download/v1.1.0/OA-Clean-1.1.0-Windows-Setup-x64.exe">
+              <span>Download .exe</span>
+              <svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 20h14" /></svg>
+            </a>
           </article>
 
           <article class="download-card" data-platform="mac-arm">
             <div class="card-label"><span>macOS</span><span class="recommended" hidden>Recommended</span></div>
             <h3>Apple silicon</h3>
             <p>M1, M2, M3, M4 and newer · 146 MB</p>
-            <a href="https://github.com/ZURAVFX/OA-Clean/releases/download/v1.1.0/OA-Clean-1.1.0-mac-arm64.dmg">Download .dmg</a>
+            <a href="https://github.com/ZURAVFX/OA-Clean/releases/download/v1.1.0/OA-Clean-1.1.0-mac-arm64.dmg">
+              <span>Download .dmg</span>
+              <svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 20h14" /></svg>
+            </a>
           </article>
 
           <article class="download-card" data-platform="mac-intel">
             <div class="card-label"><span>macOS</span></div>
             <h3>Intel</h3>
             <p>Intel-based Mac · 159 MB</p>
-            <a href="https://github.com/ZURAVFX/OA-Clean/releases/download/v1.1.0/OA-Clean-1.1.0-mac-x64.dmg">Download .dmg</a>
+            <a href="https://github.com/ZURAVFX/OA-Clean/releases/download/v1.1.0/OA-Clean-1.1.0-mac-x64.dmg">
+              <span>Download .dmg</span>
+              <svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 20h14" /></svg>
+            </a>
           </article>
         </div>
 
         <p class="mac-check"><strong>Not sure which Mac?</strong> Apple menu › About This Mac. “Chip” means Apple silicon; “Processor” means Intel.</p>
-      </section>
 
-      <section class="guide" id="install" aria-labelledby="guide-heading">
-        <div>
-          <p class="eyebrow"><span></span> Simple Mac setup</p>
-          <h2 id="guide-heading">Download. Drag. Open.</h2>
-          <p class="guide-copy">
-            Open the DMG, drag OA Clean into Applications, then open the app. The illustrated one-page guide covers the one-time macOS approval if it appears.
-          </p>
-          <a class="button" href="assets/OA-Clean-Mac-Installation-Guide.pdf">Open the Mac guide</a>
-        </div>
-        <ol>
-          <li><span>1</span>Open the DMG</li>
-          <li><span>2</span>Drag to Applications</li>
-          <li><span>3</span>Open OA Clean</li>
-        </ol>
+        <aside class="mac-support" aria-labelledby="mac-support-title">
+          <div>
+            <p class="support-label">Important for Mac users</p>
+            <h3 id="mac-support-title">If macOS says OA Clean is damaged, don’t move it to the Bin.</h3>
+            <p>Choose <strong>Cancel</strong>, then follow the one-page Mac installation guide. You may need Britannia IT support to authorise the app and enter the administrator password.</p>
+          </div>
+          <a class="guide-button" href="assets/OA-Clean-Mac-Installation-Guide.pdf">Open the Mac guide</a>
+        </aside>
       </section>
 
       <section class="privacy">
